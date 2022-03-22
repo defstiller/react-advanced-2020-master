@@ -8,7 +8,7 @@ const UseStateBasics = () => {
   } else {
     setCurrent("random title")
   }
-  }
+}
   return <>
     <h1>{currentVal}</h1>
     <button onClick={handleTitleClick}>Change title</button>
