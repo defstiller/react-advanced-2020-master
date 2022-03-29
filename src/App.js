@@ -1,10 +1,10 @@
 import React from 'react'
-import ControlledInputs from './tutorial/4-forms/setup/2-multiple-inputs'
+import UseRefBasics from './tutorial/5-useRef/setup/1-useRef-basics'
 function App() {
   return (
     <div className='container'>
       <React.StrictMode>
-      <ControlledInputs />
+      <UseRefBasics />
       </React.StrictMode>
     </div>
   )
