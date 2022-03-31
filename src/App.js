@@ -1,10 +1,10 @@
 import React from 'react'
-import ContextAPI from './tutorial/8-useContext/setup/1-context-api'
+import Setup from "./tutorial/10-prop-types/setup"
 function App() {
   return (
     <div className='container'>
       <React.StrictMode>
-      <ContextAPI />
+      <Setup />
       </React.StrictMode>
     </div>
   )
