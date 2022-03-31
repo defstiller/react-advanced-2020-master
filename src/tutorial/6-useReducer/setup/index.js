@@ -10,19 +10,19 @@ const defaultState = {
 };
 const Index = () => {
   const [name, setName] = useState('');
-  const [state, dispatch] = useReducer(reducer, defaultState);
+  const [state, setState] = useReducer(reducer, defaultState);
   function handleSubmit(e) {
     e.preventDefault();
     if (name) {
       const newItem = { id: name.length + Math.random() * 50, name };
-      dispatch({ type: 'ADD_ITEM', payload: newItem });
+      setState({ type: 'ADD_ITEM', payload: newItem });
       setName('');
     } else {
-      dispatch({ type: 'NO_VALUE' });
+      setState({ type: 'NO_VALUE' });
     }
   };
   function closeModal() {
-    dispatch({ type: 'CLOSE_MODAL' });
+    setState({ type: 'CLOSE_MODAL' });
   };
   return (
     <>
@@ -45,7 +45,7 @@ const Index = () => {
             <h4>{person.name}</h4>
             <button
               onClick={() =>
-                dispatch({ type: 'REMOVE_ITEM', payload: person.id })
+                setState({ type: 'REMOVE_ITEM', payload: person.id })
               }
             >
               remove
