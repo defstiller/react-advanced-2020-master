@@ -1,10 +1,10 @@
 import React from 'react'
-import Setup from "./tutorial/11-react-router/setup"
+import Index from "./tutorial/12-memo-useMemo-useCallback/index"
 function App() {
   return (
     <div className='container'>
       <React.StrictMode>
-      <Setup />
+      <Index />
       </React.StrictMode>
     </div>
   )
